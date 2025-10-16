@@ -20,7 +20,7 @@ REQUIREMENTS
 - Go 1.16+ installed.
 Run as Administrator on Windows (for privileged ICMP).
 
-Dependencies:
+DEPENDENCIES:
 - github.com/go-ping/ping
 - github.com/guptarohit/asciigraph (auto-fetched via go mod tidy).
 
@@ -32,13 +32,10 @@ INSTALLATION
 USAGE
 - Run the program (as admin-optional)in power shell:
 - go run main.go
-
-Choose mode (1-3):
+- Choose mode (1-3):
 1: Enter one host, then interval (e.g., 5 sec).
 2: Enter hosts separated by ", " (comma + space), then interval per host.
 3: Uses targetservers.txt (format: host [minutes] per line, e.g., 8.8.8.8 2 for 2 minutes interval).
-
-
 - Pinging starts with live output (e.g., Ping 1: 10 ms or loss).
 - Press Enter to stop.
 Outputs:
@@ -65,6 +62,5 @@ LIMITATIONS
 
 CONTRIBUTING
 Feel free to fork and submit PRs for improvements like HTML reports or more units (hours).
-License
-MIT LICENSE 
-(feel free to modify).
+LICENSE
+MIT license (feel free to modify).
