@@ -1,2 +1,5 @@
 logs/
 *.csv
+*.exe
+*.log
+/build/  
