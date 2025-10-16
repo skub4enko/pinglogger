@@ -12,28 +12,26 @@ Input Modes:
 - Logging: Saves ping results (timestamp + RTT or "loss") to CSV files in a logs/ folder (auto-created).
 - Statistics: Average RTT, packet loss count and percentage.
 - ASCII Graph: Visualizes RTT over time using asciigraph. Handles stable/flat lines and losses gracefully.
-Graceful Stop: Press Enter or Ctrl+C to stop all pings.
-Validation: Checks IP/domain format; strips http/https prefixes.
-Fallbacks: If file is missing/empty or input invalid, switches to manual mode.
+- Graceful Stop: Press Enter or Ctrl+C to stop all pings.
+- Validation: Checks IP/domain format; strips http/https prefixes.
+- Fallbacks: If file is missing/empty or input invalid, switches to manual mode.
 
 REQUIREMENTS
-Go 1.16+ installed.
+- Go 1.16+ installed.
 Run as Administrator on Windows (for privileged ICMP).
+
 Dependencies:
 - github.com/go-ping/ping
 - github.com/guptarohit/asciigraph (auto-fetched via go mod tidy).
 
 INSTALLATION
-Clone or download the project.
-Navigate to the project directory:
-cd C:\Go\ping_logger
-
-Fetch dependencies:
-go mod tidy
+- Clone or download the project.
+- Navigate to the project directory: cd C:\Go\ping_logger
+- Fetch dependencies: go mod tidy
 
 USAGE
-Run the program (as admin):
-go run main.go
+- Run the program (as admin-optional)in power shell:
+- go run main.go
 
 Choose mode (1-3):
 1: Enter one host, then interval (e.g., 5 sec).
@@ -41,11 +39,12 @@ Choose mode (1-3):
 3: Uses targetservers.txt (format: host [minutes] per line, e.g., 8.8.8.8 2 for 2 minutes interval).
 
 
-Pinging starts with live output (e.g., Ping 1: 10 ms or loss).
-Press Enter to stop.
-Outputs: Stats, graph in console; CSV in logs/ (e.g., logs/ping_log_8_8_8_8.csv).
+- Pinging starts with live output (e.g., Ping 1: 10 ms or loss).
+- Press Enter to stop.
+Outputs:
+- Stats, graph in console; CSV in logs/ (e.g., logs/ping_log_8_8_8_8.csv).
 
-EXAMPLE TARGETSERVERS.TXT
+EXAMPLE targetservers.txt
 - 8.8.8.8 0.5  # Ping every 30 seconds
 - google.com 1 # Every 1 minute
 - Comments ignored after #
@@ -67,4 +66,5 @@ LIMITATIONS
 CONTRIBUTING
 Feel free to fork and submit PRs for improvements like HTML reports or more units (hours).
 License
-MIT License (feel free to modify).
+MIT LICENSE 
+(feel free to modify).
