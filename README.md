@@ -46,7 +46,7 @@ Outputs: Stats, graph in console; CSV in logs/ (e.g., logs/ping_log_8_8_8_8.csv)
 EXAMPLE TARGETSERVERS.TXT
 8.8.8.8 0.5  # Ping every 30 seconds
 google.com 1 # Every 1 minute
-# Comments ignored
+Comments ignored after #
 
 PROJECT STRUCTURE
 main.go: Entry point and UI logic.
